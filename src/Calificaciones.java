@@ -9,12 +9,13 @@ public class Calificaciones {
     public static void main(String[] args){
         Scanner entrada = new Scanner(System.in);
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Ingrese su nombre");
+        System.out.print("Nombre del estudiante: ");
         nombre = teclado.nextLine();
         for (int i = 0; i < 5; i++){
-            System.out.println("Digite la calificación " + (i + 1) + " : ");
+            System.out.print("Digite la calificación " + (i + 1) + ": ");
             calificaciones [i] = entrada.nextFloat();
         }
+        System.out.println();
         calcular_promedio(calificaciones);
         calificacion_final(promedio);
         imprimir(nombre, calificaciones, promedio, calificacion);
